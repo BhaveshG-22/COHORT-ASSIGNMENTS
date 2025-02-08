@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CodeAnywhere from "./components/codeAnywhere";
+import CodeSuggestions from "./components/codeSuggestions";
+import Customization from "./components/customization";
+import ExtensionsSection from "./components/extensionsSection";
+import FeaturesSection from "./components/featuresSection";
+import Footer from "./components/footer";
+import HeroSection from "./components/heroSection";
+import LanguageSupport from "./components/languageSupport";
+import MultiFileEdits from "./components/multiFileEdits";
+import Navbar from "./components/navbar";
+import RichFeatures from "./components/richFeatures";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <HeroSection />
+      <FeaturesSection />
+      <MultiFileEdits />
+      <CodeSuggestions />
+      <ExtensionsSection />
+      <LanguageSupport />
+      <Customization />
+      <CodeAnywhere />
+      <RichFeatures /> 
+      <Footer />
     </div>
   );
 }
